@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/**
+* 1. Correct text resizing oddly in IE 6/7 when body font-size is set using
+*    em units.
+* 2. Prevent iOS text size adjust after orientation change, without disabling
+*    user zoom.
+*/
+
+html {
+  font-size: 100%; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -ms-text-size-adjust: 100%; /* 2 */
+}
+
+html,
+body, #root {
+  height: 100%;
+}
+
+svg {
+  transition: transform 200ms ease-in-out;
+
+  path,
+  circle {
+    transition: stroke 200ms ease-in-out, fill 200ms ease-in-out;
+  }
+  &:hover {
+    transition: transform 200ms ease-in-out;
+    path,
+    circle {
+      transition: stroke 200ms ease-in-out, fill 200ms ease-in-out;
+    }
+  }
+  &:active {
+    transition: transform 200ms ease-in-out;
+  }
+}
+
+/**
+  * 1. Remove border when inside a element in IE 6/7/8/9 and Firefox 3.
+  * 2. Improve image quality when scaled in IE 7.
+  */
+
+img {
+  border: 0; /* 1 */
+  -ms-interpolation-mode: bicubic; /* 2 */
+  max-width: 100%;
+}
