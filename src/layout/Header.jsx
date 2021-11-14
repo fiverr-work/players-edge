@@ -186,6 +186,15 @@ const MenuStyle = styled.div`
       margin-bottom: 5px;
     }
   }
+
+  @media (max-width: 768px) {
+    width: 50px;
+    height: 50px;
+    span {
+      width: 30px;
+      height: 5px;
+    }
+  }
 `;
 
 // Sidebar Component
@@ -237,6 +246,7 @@ const SidebarStyle = styled.aside`
   display: flex;
   flex-direction: column;
   transition: right 200ms ease-in-out;
+  z-index: 10;
 
   &.show {
     right: 0;
@@ -255,7 +265,7 @@ const SidebarStyle = styled.aside`
     }
   }
   .devider {
-    margin: 40px auto 70px;
+    margin: 40px auto 50px;
     height: 5px;
     width: 100%;
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
@@ -268,6 +278,8 @@ const SidebarStyle = styled.aside`
     margin: 0 auto;
     display: inline-block;
     flex: 1;
+    padding: 20px 0;
+    overflow: auto;
     .icon {
       width: 56px;
       height: 56px;
@@ -286,7 +298,6 @@ const SidebarStyle = styled.aside`
       color: #fff;
       display: flex;
       align-items: center;
-      text-decoration: none;
       font-weight: 500;
       font-size: 30px;
       margin-bottom: 44px;
@@ -300,6 +311,7 @@ const SidebarStyle = styled.aside`
     font-weight: 300;
     font-family: "Fira Sans Light", sans-serif;
     font-size: 24px;
+    padding-top: 20px;
   }
   @media (max-width: 768px) {
     width: 100%;
