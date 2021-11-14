@@ -88,6 +88,7 @@ const TicketsStyle = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     svg {
       margin-right: 10px;
     }
@@ -104,12 +105,14 @@ const TicketsStyle = styled.div`
   button {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     background: #2b2b2b;
     box-shadow: -5px 13px 22px rgba(0, 0, 0, 0.25);
     border-radius: 75px;
     padding: 16px 40px;
     color: #fff;
-
+    flex-wrap: wrap;
     span {
       display: inline-block;
       margin-left: 20px;

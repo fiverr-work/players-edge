@@ -17,7 +17,7 @@ const Basic = css`
 const ButtonStyle = styled.button`
   ${Basic}
   text-shadow: 0px 0px 18.523px rgba(49, 255, 156, 0.7), 0px 0px 71.7083px rgba(49, 255, 156, 0.5);
-  color: rgb(180, 255, 219);
+  color: rgb(232, 255, 244);
   background: #1ab373;
   box-shadow: -5px 13px 22px rgba(0, 0, 0, 0.25);
   border-radius: 75px;
