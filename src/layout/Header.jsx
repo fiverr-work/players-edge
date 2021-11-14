@@ -71,7 +71,7 @@ const HeaderStyle = styled.header`
       line-height: 94%;
       text-transform: capitalize;
       text-shadow: 0px 0px 20px #ff0000, 0px 0px 71.7083px #ff0000;
-      color: #ff9191;
+      color: #ffb9b9;
       padding: 10px 30px;
       margin-right: 20px;
 
