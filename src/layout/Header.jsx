@@ -125,6 +125,7 @@ const HeaderStyle = styled.header`
   @media (max-width: 765px) {
     padding-top: 30px;
     .title {
+      margin-bottom: 10px;
       h1 {
         font-size: 30px;
       }
@@ -190,6 +191,8 @@ const MenuStyle = styled.div`
   @media (max-width: 768px) {
     width: 50px;
     height: 50px;
+    top: 20px;
+    right: 10px;
     span {
       width: 30px;
       height: 5px;
@@ -199,8 +202,8 @@ const MenuStyle = styled.div`
 
 // Sidebar Component
 const Sidebar = ({ setMenu, menu }) => (
-  <SidebarStyle onClick={() => setMenu(false)} className={menu ? "show" : ""}>
-    <button className="close">
+  <SidebarStyle className={menu ? "show" : ""}>
+    <button className="close" onClick={() => setMenu(false)}>
       <CloseIcon />
     </button>
     <div className="devider"></div>
@@ -282,6 +285,7 @@ const SidebarStyle = styled.aside`
     overflow: auto;
     .icon {
       width: 56px;
+      min-width: 56px;
       height: 56px;
       background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
         linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
@@ -315,8 +319,28 @@ const SidebarStyle = styled.aside`
   }
   @media (max-width: 768px) {
     width: 100%;
+    padding: 25px;
     .close {
       margin-right: auto;
+    }
+    .devider {
+      margin: 20px auto 10px;
+    }
+    nav {
+      width: 100%;
+      a {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 24px;
+        margin-bottom: 20px;
+        span {
+          margin-left: 35px;
+        }
+      }
+    }
+    p {
+      font-size: 16px;
     }
   }
 `;

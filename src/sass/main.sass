@@ -9,4 +9,36 @@ body
     background-size: cover
     background-position: top left
 
-// font-family: 'Rubik', sans-serif
+main
+    display: flex
+    align-items: center
+    .tickets
+        display: none
+    >div
+        flex: 1
+        display: flex
+        flex-direction: column
+        align-items: center
+        &:nth-child(1)
+            align-items: flex-end
+            padding-right: 15px
+        &:nth-child(2)
+            >*
+                margin-bottom: 30px
+            .connect
+                margin-top: 60px
+        &:nth-child(3)
+            align-items: flex-start
+            padding-left: 20px
+    @media (max-width: 992px)
+        flex-direction: column
+        .tickets
+            display: block
+            margin-top: 30px
+        >div
+            &:nth-child(3)
+                display: none
+            >*
+                margin-bottom: 30px
+            .connect
+                margin-top: 30px !important
