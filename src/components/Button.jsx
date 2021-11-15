@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 
 const Button = ({ outline, children, ...rest }) => {
@@ -29,7 +30,7 @@ const ButtonStyle = styled.button`
   }
 `;
 
-const OutlineButton = styled.button`
+const OutlineButton = styled(Link)`
   ${Basic}
   padding: 15px 40px;
   border: 5px solid #1bb474;

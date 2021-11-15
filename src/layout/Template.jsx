@@ -5,6 +5,7 @@ export const Template = styled.section`
   padding-top: 110px;
   @media (max-width: 768px) {
     padding-top: 70px;
+    margin-bottom: 150px;
   }
   h1 {
     //TODO: Black
@@ -15,8 +16,8 @@ export const Template = styled.section`
     font-weight: 900;
     font-size: 52px;
     @media (max-width: 768px) {
-      font-size: 30px;
-      margin-bottom: 70px;
+      font-size: 30px !important;
+      margin-bottom: 70px !important;
     }
   }
   > a {
@@ -38,10 +39,11 @@ export const Template = styled.section`
       transform: scale(0.8);
     }
     @media (max-width: 768px) {
-      top: auto;
-      bottom: 100px;
-      right: 50%;
-      transform: translateX(50%);
+      position: static;
+      margin-top: 50px;
+      display: inline-flex;
+      transform: scale(0.8);
+      align-self: center;
     }
   }
   > div {
@@ -52,6 +54,9 @@ export const Template = styled.section`
         display: flex;
         flex: 3;
         justify-content: flex-end;
+        svg {
+          max-width: 100%;
+        }
       }
       :nth-child(2) {
         flex: 4;
@@ -73,5 +78,9 @@ export const Template = styled.section`
         }
       }
     }
+  }
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
   }
 `;

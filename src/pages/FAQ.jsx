@@ -1,9 +1,61 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import FaqComponent from "react-faq-component";
+
+import { Template, ArrowLeftIcon } from "../layout/Template";
+
+import { ReactComponent as Faq } from "../img/faq.svg";
+
+const data = {
+  rows: [
+    {
+      title: "Question 1?",
+      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus, sed orci, est lacus rhoncus sed massa eu a. Ullamcorper est sem ac pulvinar.`,
+    },
+    {
+      title: "Question 2?",
+      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus, sed orci, est lacus rhoncus sed massa eu a. Ullamcorper est sem ac pulvinar.`,
+    },
+    {
+      title: "Question 3?",
+      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus, sed orci, est lacus rhoncus sed massa eu a. Ullamcorper est sem ac pulvinar.`,
+    },
+    {
+      title: "Question 4?",
+      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus, sed orci, est lacus rhoncus sed massa eu a. Ullamcorper est sem ac pulvinar.`,
+    },
+  ],
+};
+const styles = {
+  bgColor: "transparent",
+  rowTitleColor: "#FFF500",
+  rowTitleTextSize: "30px",
+  rowContentColor: "#fff",
+  rowContentTextSize: "20px",
+  arrowColor: "#fff",
+  rowContentPaddingBottom: "30px",
+};
 
 const FAQ = () => {
-  return <>FAQ</>;
+  return (
+    <Template className="container">
+      <h1>FAQ</h1>
+      <div>
+        <div>
+          <Faq />
+        </div>
+        <CustomStyles>
+          <FaqComponent data={data} styles={styles} />
+        </CustomStyles>
+      </div>
+      <Link to="/">
+        <ArrowLeftIcon />
+      </Link>
+    </Template>
+  );
 };
 
 export default FAQ;
+
+const CustomStyles = styled.div``;

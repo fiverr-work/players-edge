@@ -7,7 +7,7 @@ const Counter = ({ title, word, number }) => {
       <h2>
         {title} <span>{word}</span>
       </h2>
-      <div>{number == 0 ? "0000" : number}</div>
+      <div>{number === 0 ? "0000" : number}</div>
     </CounterStyle>
   );
 };

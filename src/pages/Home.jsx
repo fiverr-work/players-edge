@@ -1,6 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import styled from "styled-components";
 
 // import Components
 import Header from "../layout/Header";
@@ -27,7 +25,9 @@ const Home = () => {
           <Counter title="tickets in" word="draw" number={ticketInDraw} />
           <Tickets className="tickets" />
           <Button className="connect">Connect</Button>
-          <Button outline>Winner History</Button>
+          <Button outline to="/history">
+            Winner History
+          </Button>
         </div>
         <div>
           <Tickets />

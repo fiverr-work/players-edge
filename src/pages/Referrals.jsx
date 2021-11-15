@@ -39,8 +39,5 @@ const CustomStyles = styled.div`
     font-size: 24px;
     margin-bottom: 47px;
     text-align: center;
-    span {
-      color: rgba(255, 245, 0, 0.86);
-    }
   }
 `;

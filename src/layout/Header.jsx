@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import bg from "../img/backgrounds/header.png";
+import bgSm from "../img/backgrounds/header-sm.png";
 import { ReactComponent as ContractIcon } from "../img/icons/contract.svg";
 import { ReactComponent as PrivacyIcon } from "../img/icons/privacy.svg";
 import { ReactComponent as SupportIcon } from "../img/icons/support.svg";
@@ -13,7 +14,8 @@ const Header = () => {
   const [menu, setMenu] = useState(false);
   return (
     <HeaderStyle>
-      <img src={bg} alt="" />
+      <img className="lg" src={bg} alt="" />
+      <img className="sm" src={bgSm} alt="" />
       <div className="title">
         <span>Beta</span>
         <h1>Player’s Edge</h1>
@@ -47,6 +49,9 @@ const HeaderStyle = styled.header`
     height: 100%;
     pointer-events: none;
     z-index: -1;
+    &.sm {
+      display: none;
+    }
   }
 
   .title {
@@ -124,6 +129,14 @@ const HeaderStyle = styled.header`
   }
   @media (max-width: 765px) {
     padding-top: 30px;
+    img {
+      &.sm {
+        display: block;
+      }
+      &.lg {
+        display: none;
+      }
+    }
     .title {
       margin-bottom: 10px;
       h1 {
@@ -192,7 +205,7 @@ const MenuStyle = styled.div`
     width: 50px;
     height: 50px;
     top: 20px;
-    right: 10px;
+    right: 13px;
     span {
       width: 30px;
       height: 5px;
@@ -334,6 +347,7 @@ const SidebarStyle = styled.aside`
         padding-right: 0;
         font-size: 24px;
         margin-bottom: 20px;
+        text-align: left;
         span {
           margin-left: 35px;
         }

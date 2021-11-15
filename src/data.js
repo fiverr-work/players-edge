@@ -1,0 +1,58 @@
+export const data = [
+  {
+    address: "2N3iy1LAVcwEuv4Y2BrwCjBhMseJrs71xcZ",
+    date: "18/09/2021",
+    time: "12:34",
+    ticketInDraw: 5560,
+    prize: "450 MATIC",
+  },
+  {
+    address: "2N5QvfY8i1XiyzzkgXcUw9s1nrUFVWtU4tv",
+    date: "16/08/2021",
+    time: "00:12",
+    ticketInDraw: 1577,
+    prize: "450 MATIC",
+  },
+  {
+    address: "2MtAVz7TJrLJghoVTLAGp4Lxcs9ZQXf7xDV",
+    date: "28/10/2021",
+    time: "17:33",
+    ticketInDraw: 8013,
+    prize: "450 MATIC",
+  },
+  {
+    address: "2N1Tor2BEZPhrLnrAEYf4Jy2auKZ8k7J2QS",
+    date: "12/06/2021",
+    time: "07:12",
+    ticketInDraw: 6065,
+    prize: "450 MATIC",
+  },
+  {
+    address: "2N488BQnTzTZEG4tQZCpTKDxu99jwqD9LTE",
+    date: "16/08/2021",
+    time: "01:17",
+    ticketInDraw: 1439,
+    prize: "450 MATIC",
+  },
+  {
+    address: "2N2c8PvjEqx5dsJNsZ5dZdAzngJVhMHqTCf",
+    date: "07/05/2021",
+    time: "12:04",
+    ticketInDraw: 2798,
+    prize: "450 MATIC",
+  },
+  {
+    address: "2NGHXWhrK9tvJqvxG7CTNjHr46dV6M533Cx",
+    date: "07/05/2021",
+    time: "00:36",
+    ticketInDraw: 1374,
+    prize: "450 MATIC",
+  },
+  {
+    address: "2N6UqHVxvZCcGqFNUHd4ymmLECWEWyu8YRT",
+    date: "15/08/2021",
+    time: "06:47",
+    ticketInDraw: 3536,
+    prize: "450 MATIC",
+  },
+];
