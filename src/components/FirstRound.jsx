@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
+import { ModalBackground } from "../components/modals/ModalBackground";
+
 import { ReactComponent as CalendarIcon } from "../img/icons/calendar.svg";
 import { ReactComponent as ArrowBottomIcon } from "../img/icons/arrow-bottom.svg";
 import ArrowsLeft from "../img/icons/arrows-left.svg";
@@ -44,7 +46,7 @@ const FirstRound = () => {
           <span>Round</span>
         </div>
       </OpenSidebar>
-      {isOpen && <BackGround onClick={() => setIsOpen(false)} />}
+      {isOpen && <ModalBackground onClick={() => setIsOpen(false)} />}
     </>
   );
 };
@@ -99,17 +101,6 @@ const OpenSidebar = styled.div`
   }
 `;
 
-const BackGround = styled.div`
-  z-index: 8;
-  position: fixed;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000000ce;
-  @media (min-width: 992px) {
-    display: none;
-  }
-`;
 const FirstRoundStyle = styled.div`
   width: 100%;
   max-width: 399px;
@@ -214,7 +205,7 @@ const FirstRoundStyle = styled.div`
 
     width: 85vw;
     max-width: 85vw;
-    height: 70vh;
+    height: 500px;
 
     h2 {
       font-size: 24px;

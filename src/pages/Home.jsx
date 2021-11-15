@@ -1,6 +1,4 @@
-import React from "react";
-import { useWeb3React } from "@web3-react/core";
-import { injected } from "../components/wallet/connectors";
+import React, { useState } from "react";
 
 // import Components
 import Header from "../layout/Header";
@@ -10,27 +8,15 @@ import Button from "../components/Button";
 import Counter from "../components/Counter";
 import FirstRound from "../components/FirstRound";
 import Tickets from "../components/Tickets";
+import Wallets from "../components/modals/Wallets";
 
 const ticketLeft = 1100;
 const ticketInDraw = 0;
 
+//TODO: Animations
 const Home = () => {
-  const { active, account, activate, deactivate } = useWeb3React();
+  const [modal, setModal] = useState(false);
 
-  async function connect() {
-    try {
-      await activate(injected);
-    } catch (ex) {
-      // console.log(ex);
-    }
-  }
-  async function disconnect() {
-    try {
-      deactivate();
-    } catch (ex) {
-      // console.log(ex);
-    }
-  }
   return (
     <>
       <Header />
@@ -43,17 +29,15 @@ const Home = () => {
           <Counter title="tickets" word="left" number={ticketLeft} />
           <Counter title="tickets in" word="draw" number={ticketInDraw} />
           <Tickets className="tickets" />
-          {active ? (
+          {/* //TODO: Wallets Modals */}
+          {typeof window.web3 !== "undefined" ? (
             <>
-              <Button className="connect" onClick={disconnect}>
-                Disconnect
-              </Button>
               <span>
-                Connected with <b>{account}</b>
+                Connected with <b>{window.web3.currentProvider._state.accounts[0]}</b>
               </span>
             </>
           ) : (
-            <Button className="connect" onClick={connect}>
+            <Button className="connect" onClick={() => setModal(true)}>
               Connect
             </Button>
           )}
@@ -65,6 +49,7 @@ const Home = () => {
           <Tickets />
         </div>
       </main>
+      {modal && <Wallets hideModal={setModal} />}
     </>
   );
 };

@@ -2,6 +2,8 @@ import "./sass/style.scss";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Web3ReactProvider } from "@web3-react/core";
 import Web3 from "web3";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // Pages
 import Home from "./pages/Home";
@@ -21,22 +23,25 @@ function getLibrary(provider) {
 
 const App = () => {
   return (
-    <Web3ReactProvider getLibrary={getLibrary}>
-      <Router>
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/faq" element={<FAQ />} />
-          <Route exact path="/history" element={<History />} />
-          <Route exact path="/how-to-play" element={<HowToPlay />} />
-          <Route exact path="/referrals" element={<Referrals />} />
-          <Route exact path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route exact path="/smart-contract" element={<SmartContract />} />
-          <Route exact path="/support-email" element={<SupportEmail />} />
-          <Route exact path="/terms-of-services" element={<TermsOfServices />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Router>
-    </Web3ReactProvider>
+    <>
+      <ToastContainer />
+      <Web3ReactProvider getLibrary={getLibrary}>
+        <Router>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/faq" element={<FAQ />} />
+            <Route exact path="/history" element={<History />} />
+            <Route exact path="/how-to-play" element={<HowToPlay />} />
+            <Route exact path="/referrals" element={<Referrals />} />
+            <Route exact path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route exact path="/smart-contract" element={<SmartContract />} />
+            <Route exact path="/support-email" element={<SupportEmail />} />
+            <Route exact path="/terms-of-services" element={<TermsOfServices />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Router>
+      </Web3ReactProvider>
+    </>
   );
 };
 
