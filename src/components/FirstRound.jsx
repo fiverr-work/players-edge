@@ -212,6 +212,24 @@ const FirstRoundStyle = styled.div`
     transform: translate(-50%, -50%);
     z-index: 12;
 
+    width: 85vw;
+    max-width: 85vw;
+    height: 70vh;
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    label {
+      font-size: 16px;
+    }
+    .box > div span {
+      font-size: 24px;
+    }
+    .footer h3 {
+      font-size: 20px;
+    }
     &.show {
       transition: left 350ms ease-in;
       left: 50%;
