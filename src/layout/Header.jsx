@@ -64,8 +64,7 @@ const HeaderStyle = styled.header`
       font-size: 52px;
       line-height: 1;
       text-transform: capitalize;
-      // TODO: Black Font
-      font-family: "Fira Sans";
+      font-family: "Fira Sans Black", sans-serif;
     }
     span {
       font-family: "Fira Sans", sans-serif;
@@ -100,7 +99,7 @@ const HeaderStyle = styled.header`
     justify-content: center;
     align-items: center;
     p {
-      font-family: "Rubik Bold", sans-serif;
+      font-family: "Rubik Bold";
       font-weight: bold;
       font-size: 36px;
       text-shadow: 0px 0px 15px rgba(255, 245, 0, 0.86), 0px 0px 72px rgba(255, 245, 7, 0.43);
@@ -110,6 +109,7 @@ const HeaderStyle = styled.header`
     span {
       text-transform: capitalize;
       text-shadow: 0px 0px 15px #ff0000, 0px 0px 71.7083px #ff0000;
+      font-family: "Fira Sans Bold";
       font-weight: bold;
       font-size: 36px;
       color: #ff9e9e;
@@ -315,6 +315,7 @@ const SidebarStyle = styled.aside`
       color: #fff;
       display: flex;
       align-items: center;
+      font-family: "Fira Sans Medium";
       font-weight: 500;
       font-size: 30px;
       margin-bottom: 44px;
@@ -326,7 +327,7 @@ const SidebarStyle = styled.aside`
   }
   p {
     font-weight: 300;
-    font-family: "Fira Sans Light", sans-serif;
+    font-family: "Fira Sans Light";
     font-size: 24px;
     padding-top: 20px;
   }

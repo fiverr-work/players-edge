@@ -15,7 +15,7 @@ const Tickets = ({ className }) => {
   return (
     <TicketsStyle className={className}>
       <h3>
-        <TicketIcon /> Tickets you own : <span>{" " + number}</span>
+        <TicketIcon /> Tickets you own : <span>{number}</span>
       </h3>
       <button onClick={handleTicket}>
         <Icon>
@@ -83,6 +83,7 @@ const TicketsStyle = styled.div`
   display: inline-block;
   h3 {
     font-weight: 500;
+    font-family: "Fira Sans Medium";
     font-size: 30px;
     margin-bottom: 10px;
     display: flex;
@@ -94,6 +95,8 @@ const TicketsStyle = styled.div`
     }
     span {
       color: rgba(255, 245, 0, 0.86);
+      display: inline-block;
+      margin-left: 5px;
     }
     @media (max-width: 768px) {
       svg {
@@ -116,10 +119,11 @@ const TicketsStyle = styled.div`
     span {
       display: inline-block;
       margin-left: 20px;
+      font-family: "Fira Sans Medium";
       font-weight: 500;
       font-size: 30px;
       b {
-        //TODO: ExtraBold
+        font-family: "Fira Sans ExtraBold";
         font-weight: 800;
       }
       @media (max-width: 768px) {

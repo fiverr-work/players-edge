@@ -10,10 +10,10 @@ const Button = ({ outline, children, ...rest }) => {
 export default Button;
 
 const Basic = css`
+  font-family: "Rubik Bold";
   font-weight: bold;
   font-size: 36px;
   line-height: 1;
-  font-family: "Rubik Bold", sans-serif;
 `;
 const ButtonStyle = styled.button`
   ${Basic}

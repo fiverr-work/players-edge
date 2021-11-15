@@ -70,10 +70,10 @@ const OpenSidebar = styled.div`
     text-shadow: 0px 0px 8px rgba(49, 255, 156, 0.7), 0px 0px 71.7083px rgba(49, 255, 156, 0.5);
     color: rgb(182, 255, 220);
     text-align: center;
+    font-family: "Fira Sans Bold";
     font-weight: bold;
-    font-size: 19px;
+    font-size: 18px;
     letter-spacing: 2px;
-    font-family: "Fira Sans Bold", sans-serif;
     border-radius: 16px;
     padding: 30px;
     position: relative;
@@ -123,7 +123,7 @@ const FirstRoundStyle = styled.div`
   position: relative;
 
   h2 {
-    //TODO: Bold
+    font-family: "Fira Sans Bold", sans-serif;
     font-weight: bold;
     font-size: 36px;
     margin-bottom: 37px;
@@ -161,7 +161,7 @@ const FirstRoundStyle = styled.div`
       flex-direction: column;
       align-items: center;
       span {
-        //TODO: Bold
+        font-family: "Fira Sans Bold";
         font-weight: bold;
         font-size: 36px;
         text-transform: uppercase;
@@ -177,7 +177,7 @@ const FirstRoundStyle = styled.div`
   .footer {
     text-align: center;
     h3 {
-      //TODO: SemiBold
+      font-family: "Fira Sans SemiBold", sans-serif;
       margin: 50px auto 0;
       color: #f4f4f4;
       font-weight: 600;

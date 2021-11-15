@@ -1,0 +1,36 @@
+// Import fonts Rubik and Fira Sans
+@import url('https://fonts.googleapis.com/css2?family=Rubik');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code');
+
+// Rubik
+@font-face {
+    font-family: "Rubik Bold";
+    src: url("../fonts/Rubik/Rubik-Bold.ttf") format("truetype");
+}
+
+// Fira Sans
+@font-face {
+    font-family: "Fira Sans Light";
+    src: url("../fonts/FiraSans/FiraSans-Light.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Fira Sans Medium";
+    src: url("../fonts/FiraSans/FiraSans-Medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Fira Sans Bold";
+    src: url("../fonts/FiraSans/FiraSans-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Fira Sans Black";
+    src: url("../fonts/FiraSans/FiraSans-Black.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Fira Sans SemiBold";
+    src: url("../fonts/FiraSans/FiraSans-SemiBold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Fira Sans ExtraBold";
+    src: url("../fonts/FiraSans/FiraSans-ExtraBold.ttf") format("truetype");
+}

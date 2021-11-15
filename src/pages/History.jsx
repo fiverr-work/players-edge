@@ -33,7 +33,7 @@ const Template = styled(Tm)`
     align-items: center;
     text-shadow: 0px 0px 3px rgba(255, 245, 0, 0.86), 0px 0px 72px rgba(255, 245, 7, 0.43);
     color: #fffca3;
-    // TODO: bold
+    font-family: "Fira Sans Bold", sans-serif;
     font-weight: bold;
     font-size: 48px;
     margin-bottom: 90px;
@@ -95,6 +95,7 @@ const TableStyle = styled.table`
 
   thead {
     text-transform: capitalize;
+    font-family: "Fira Sans Bold", sans-serif;
     font-weight: bold;
     font-size: 30px;
   }

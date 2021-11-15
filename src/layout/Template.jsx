@@ -8,7 +8,6 @@ export const Template = styled.section`
     margin-bottom: 150px;
   }
   h1 {
-    //TODO: Black
     font-family: "Fira Sans Black", sans-serif;
     text-align: center;
     text-transform: capitalize;
