@@ -221,19 +221,19 @@ const Sidebar = ({ setMenu, menu }) => (
     </button>
     <div className="devider"></div>
     <nav>
-      <Link to="/terms-conditions">
+      <Link to="/terms-of-services">
         <span className="icon">
           <TermsIcon />
         </span>
         Terms of service
       </Link>
-      <Link to="/privacy">
+      <Link to="/privacy-policy">
         <span className="icon">
           <PrivacyIcon />
         </span>
         Privacy Policy
       </Link>
-      <Link to="/support">
+      <Link to="/support-email">
         <span className="icon">
           <SupportIcon />
         </span>
