@@ -96,11 +96,11 @@ const Content = ({ hideModal }) => {
       <div>
         <ConnectTo onClick={connectMetamask}>
           <MetaMaskIcon />
-          Metamast
+          MetaMask
         </ConnectTo>
         <ConnectTo onClick={connectTrustedWallet}>
           <TrustedWalletIcon />
-          Trusted Wallet
+          Trust Wallet
         </ConnectTo>
       </div>
     </ContentStyle>
@@ -133,7 +133,7 @@ const ConnectTo = styled.button`
   letter-spacing: 1px;
   font-size: 16px;
   font-weight: 500;
-  text-transform: uppercase;
+  text-transform: capitalize;
 
   :hover {
     background-color: #444444;

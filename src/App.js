@@ -5,7 +5,7 @@ import { Web3ReactProvider } from "@web3-react/core";
 import Web3 from "web3";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// import "aos/dist/aos.css";
+import "aos/dist/aos.css";
 import AOS from "aos";
 
 // Pages
@@ -26,9 +26,9 @@ function getLibrary(provider) {
 
 const App = () => {
   useEffect(() => {
-    // AOS.init({
-    //   duration: 500,
-    // });
+    AOS.init({
+      duration: 1000,
+    });
   }, []);
   return (
     <>

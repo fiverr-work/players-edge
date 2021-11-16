@@ -28,17 +28,12 @@ const Home = () => {
           <Counter title="tickets" word="left" number={ticketLeft} />
           <Counter title="tickets in" word="draw" number={ticketInDraw} />
           <Tickets className="tickets" />
-          {typeof window.web3 !== "undefined" ? (
-            <>
-              <span style={{ textAlign: "center" }}>
-                Connected with <b>{window.web3.currentProvider._state.accounts[0]}</b>
-              </span>
-            </>
-          ) : (
-            <Button className="connect" onClick={() => setModal(true)}>
-              Connect
-            </Button>
-          )}
+          {/* <span style={{ textAlign: "center" }}>
+            Connected with <b>{window.web3.currentProvider._state.accounts[0]}</b>
+          </span> */}
+          <Button className="connect" onClick={() => setModal(true)}>
+            Connect
+          </Button>
           <Button outline to="/history">
             Winner History
           </Button>

@@ -70,7 +70,7 @@ export const BackHome = () => {
 };
 
 const BackHomeStyle = styled.div`
-  position: fixed;
+  position: absolute;
   top: 100px;
   right: 100px;
   z-index: 1;

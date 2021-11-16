@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Counter = ({ title, word, number }) => {
   return (
-    <CounterStyle data-aos="fade-in">
+    <CounterStyle>
       <h2>
         {title} <span>{word}</span>
       </h2>

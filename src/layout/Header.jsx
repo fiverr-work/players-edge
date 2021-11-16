@@ -62,7 +62,7 @@ const HeaderStyle = styled.header`
     margin-bottom: clamp(10px, 1vh, 1vh);
     h1 {
       font-weight: 900;
-      font-size: clamp(24px, 4vh, 4vh);
+      font-size: clamp(18px, 4vh, 4vh);
       line-height: 1;
       text-transform: capitalize;
       font-family: "Fira Sans Black", sans-serif;
@@ -118,10 +118,11 @@ const HeaderStyle = styled.header`
   }
 
   @media (max-width: 992px) {
+    padding-bottom: 30px;
     .description {
       flex-direction: column;
       p {
-        max-width: 55%;
+        max-width: 85%;
         margin-bottom: 10px;
         margin-right: 0;
       }
@@ -196,14 +197,10 @@ const MenuStyle = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 50px;
-    height: 50px;
-    top: 20px;
+    top: 15px;
     right: 13px;
-    span {
-      width: 30px;
-      height: 5px;
-    }
+    max-width: 40px;
+    max-height: 40px;
   }
 `;
 

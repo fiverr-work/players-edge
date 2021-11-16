@@ -105,7 +105,7 @@ const FirstRoundStyle = styled.div`
   width: clamp(399px, 399px, 399px);
   min-height: 400px;
   height: 60vh;
-  max-height: 582px;
+  max-height: 600px;
   display: flex;
   flex-direction: column;
   background: #2b2b2b;
@@ -172,7 +172,7 @@ const FirstRoundStyle = styled.div`
   h3 {
     font-family: "Fira Sans SemiBold", sans-serif;
     margin: 0 auto;
-    margin-top: clamp(15px, 6vh, 6vh);
+    margin-top: clamp(15px, 3vh, 6vh);
     color: #f4f4f4;
     font-weight: 600;
     font-size: clamp(20px, 2vh, 2vh);
@@ -204,8 +204,10 @@ const FirstRoundStyle = styled.div`
     left: -100%;
     transform: translate(-50%, -50%);
     z-index: 12;
-    max-height: auto;
-    max-width: 90vh;
+    max-width: 85vw;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 450px;
 
     label {
       font-size: 16px;

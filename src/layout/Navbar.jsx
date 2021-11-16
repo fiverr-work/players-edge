@@ -21,8 +21,8 @@ const NavbarStyle = styled.nav`
   margin-bottom: clamp(15px, 3vh, 3vh);
   > div {
     display: inline-flex;
-    padding-top: clamp(5px, 1vh, 1vh);
-    padding-bottom: clamp(5px, 1vh, 1vh);
+    padding-top: clamp(10px, 1vh, 1vh);
+    padding-bottom: clamp(10px, 1vh, 1vh);
     padding-left: clamp(10px, 2vh, 2vh);
     padding-right: clamp(10px, 2vh, 2vh);
     justify-content: space-around;
@@ -58,18 +58,10 @@ const NavbarStyle = styled.nav`
         inset 0px 0px 7.32115px rgba(255, 245, 0, 0.86);
       border-radius: 5px;
     }
-  }
-  @media (max-width: 768px) {
-    > div {
-      padding: 10px 15px;
-    }
-    a {
-      font-size: 16px;
-      padding: 5px 20px;
-      ::after {
-        width: 4px !important;
-        height: 30px !important;
-      }
+
+    @media (max-width: 768px) {
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
 `;
