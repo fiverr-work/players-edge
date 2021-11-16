@@ -1,7 +1,13 @@
 import React from "react";
+import { BackHome, Header } from "../layout/Template";
 
 const SmartContract = () => {
-  return <>Smart Contract Page</>;
+  return (
+    <>
+      <Header>Smart Contract Page</Header>
+      <BackHome />
+    </>
+  );
 };
 
 export default SmartContract;

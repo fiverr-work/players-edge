@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import FaqComponent from "react-faq-component";
 
-import { Template, ArrowLeftIcon } from "../layout/Template";
+import { Template, BackHome } from "../layout/Template";
 
 import { ReactComponent as Faq } from "../img/faq.svg";
 
@@ -49,9 +48,7 @@ const FAQ = () => {
           <FaqComponent data={data} styles={styles} />
         </CustomStyles>
       </div>
-      <Link to="/">
-        <ArrowLeftIcon />
-      </Link>
+      <BackHome />
     </Template>
   );
 };

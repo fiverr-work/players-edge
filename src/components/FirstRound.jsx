@@ -102,7 +102,7 @@ const OpenSidebar = styled.div`
 `;
 
 const FirstRoundStyle = styled.div`
-  width: 100%;
+  width: 90vh;
   max-width: 399px;
   height: 583px;
   display: flex;
@@ -202,9 +202,6 @@ const FirstRoundStyle = styled.div`
     left: -100%;
     transform: translate(-50%, -50%);
     z-index: 12;
-
-    width: 85vw;
-    max-width: 85vw;
     height: 500px;
 
     h2 {

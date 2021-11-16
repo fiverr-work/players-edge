@@ -13,7 +13,6 @@ import Wallets from "../components/modals/Wallets";
 const ticketLeft = 1100;
 const ticketInDraw = 0;
 
-//TODO: Animations
 const Home = () => {
   const [modal, setModal] = useState(false);
 
@@ -29,10 +28,9 @@ const Home = () => {
           <Counter title="tickets" word="left" number={ticketLeft} />
           <Counter title="tickets in" word="draw" number={ticketInDraw} />
           <Tickets className="tickets" />
-          {/* //TODO: Wallets Modals */}
           {typeof window.web3 !== "undefined" ? (
             <>
-              <span>
+              <span style={{ textAlign: "center" }}>
                 Connected with <b>{window.web3.currentProvider._state.accounts[0]}</b>
               </span>
             </>

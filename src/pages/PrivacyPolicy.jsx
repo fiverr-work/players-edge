@@ -1,8 +1,14 @@
 import React from "react";
 
-//TODO: back home button
+import { BackHome, Header } from "../layout/Template";
+
 const PrivacyPolicy = () => {
-  return <>Privacy Policy Page</>;
+  return (
+    <>
+      <Header>Privacy Policy Page</Header>
+      <BackHome />
+    </>
+  );
 };
 
 export default PrivacyPolicy;

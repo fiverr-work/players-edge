@@ -1,8 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-import { Template, ArrowLeftIcon } from "../layout/Template";
+import { Template, BackHome } from "../layout/Template";
 
 import { ReactComponent as Questions } from "../img/how.svg";
 
@@ -33,9 +32,7 @@ const HowToPlay = () => {
           </p>
         </CustomStyles>
       </div>
-      <Link to="/">
-        <ArrowLeftIcon />
-      </Link>
+      <BackHome />
     </Template>
   );
 };

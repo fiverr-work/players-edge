@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { data } from "../data.js";
 
-import { Template as Tm, ArrowLeftIcon } from "../layout/Template";
+import { Template as Tm, BackHome } from "../layout/Template";
 
 import { ReactComponent as Winner } from "../img/winner.svg";
 
@@ -17,9 +16,7 @@ const History = () => {
       <div className="table">
         <Table>test</Table>
       </div>
-      <Link to="/">
-        <ArrowLeftIcon />
-      </Link>
+      <BackHome />
     </Template>
   );
 };
