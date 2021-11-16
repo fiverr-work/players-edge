@@ -13,7 +13,7 @@ const Tickets = ({ className }) => {
     setLoading(!loading);
   }
   return (
-    <TicketsStyle className={className} data-aos="zoom-in">
+    <TicketsStyle className={className} data-aos="fade-in">
       <h3>
         <TicketIcon /> Tickets you own : <span>{number}</span>
       </h3>
@@ -39,9 +39,9 @@ const Icon = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 55px;
-  min-width: 55px;
-  height: 55px;
+  width: 45px;
+  min-width: 45px;
+  height: 45px;
   background: rgba(196, 196, 196, 0.01);
   box-shadow: inset 0px 30.0211px 43.1072px -27.7118px rgba(255, 255, 255, 0.274),
     inset -1px 1px 7px -3.07909px #ffffff55,
@@ -61,6 +61,7 @@ const Icon = styled.div`
   img {
     width: 40px;
     height: 40px;
+    min-height: 40px;
   }
 
   @media (max-width: 768px) {
@@ -84,7 +85,7 @@ const TicketsStyle = styled.div`
   h3 {
     font-weight: 500;
     font-family: "Fira Sans Medium";
-    font-size: 30px;
+    font-size: clamp(16px, 2.5vh, 3vh);
     margin-bottom: 10px;
     display: flex;
     align-items: center;
@@ -121,7 +122,7 @@ const TicketsStyle = styled.div`
       margin-left: 20px;
       font-family: "Fira Sans Medium";
       font-weight: 500;
-      font-size: 30px;
+      font-size: clamp(16px, 2.5vh, 3vh);
       b {
         font-family: "Fira Sans ExtraBold";
         font-weight: 800;
@@ -133,7 +134,7 @@ const TicketsStyle = styled.div`
   }
   .loading {
     text-align: center;
-    margin-top: 30px;
+    margin-top: clamp(15px, 2.5vh, 3vh);
     display: none;
 
     &.show {

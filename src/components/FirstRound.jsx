@@ -40,11 +40,7 @@ const FirstRound = () => {
           </h3>
         </div>
       </FirstRoundStyle>
-      <OpenSidebar
-        onClick={() => setIsOpen(true)}
-        className={isOpen ? "hide" : ""}
-        data-aos="fade-right"
-      >
+      <OpenSidebar onClick={() => setIsOpen(true)} className={isOpen ? "hide" : ""}>
         <div>
           <span>First</span>
           <span>Round</span>
@@ -106,22 +102,23 @@ const OpenSidebar = styled.div`
 `;
 
 const FirstRoundStyle = styled.div`
-  width: 90vh;
-  max-width: 399px;
-  height: 583px;
+  width: clamp(399px, 399px, 399px);
+  min-height: 400px;
+  height: 60vh;
+  max-height: 582px;
   display: flex;
   flex-direction: column;
   background: #2b2b2b;
   box-shadow: -5px 13px 22px rgba(0, 0, 0, 0.25);
   border-radius: 75px;
-  padding: 40px;
+  padding: clamp(20px, 4vh, 4vh);
   position: relative;
 
   h2 {
     font-family: "Fira Sans Bold", sans-serif;
     font-weight: bold;
-    font-size: 36px;
-    margin-bottom: 37px;
+    font-size: clamp(18px, 3vh, 3vh);
+    margin-bottom: clamp(15px, 3vh, 3vh);
     text-shadow: 0px 0px 18.523px rgba(49, 255, 156, 0.7), 0px 0px 71.7083px rgba(49, 255, 156, 0.5);
     text-align: center;
   }
@@ -141,9 +138,9 @@ const FirstRoundStyle = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 26px 0;
+    padding: clamp(15px, 3vh, 3vh);
     border-radius: 25px;
-    margin-bottom: 41px;
+    margin-bottom: clamp(25px, 4vh, 4vh);
     background: rgba(196, 196, 196, 0.01);
     box-shadow: inset 0px 19.8066px 28.4403px -18.283px rgba(255, 255, 255, 0.5),
       inset 0px 3.55503px 5.58648px -2.03145px #ffffff,
@@ -158,7 +155,7 @@ const FirstRoundStyle = styled.div`
       span {
         font-family: "Fira Sans Bold";
         font-weight: bold;
-        font-size: 36px;
+        font-size: clamp(20px, 4vh, 4vh);
         text-transform: uppercase;
         :nth-child(1) {
         }
@@ -171,18 +168,19 @@ const FirstRoundStyle = styled.div`
 
   .footer {
     text-align: center;
-    h3 {
-      font-family: "Fira Sans SemiBold", sans-serif;
-      margin: 50px auto 0;
-      color: #f4f4f4;
-      font-weight: 600;
-      font-size: 30px;
-      line-height: 119.5%;
-      max-width: 210px;
-      text-transform: capitalize;
-      span {
-        color: #a5eb9f;
-      }
+  }
+  h3 {
+    font-family: "Fira Sans SemiBold", sans-serif;
+    margin: 0 auto;
+    margin-top: clamp(15px, 6vh, 6vh);
+    color: #f4f4f4;
+    font-weight: 600;
+    font-size: clamp(20px, 2vh, 2vh);
+    line-height: 120%;
+    max-width: 210px;
+    text-transform: capitalize;
+    span {
+      color: #a5eb9f;
     }
   }
 
@@ -206,21 +204,14 @@ const FirstRoundStyle = styled.div`
     left: -100%;
     transform: translate(-50%, -50%);
     z-index: 12;
-    height: 500px;
-
-    h2 {
-      font-size: 24px;
-      margin-bottom: 30px;
-    }
+    max-height: auto;
+    max-width: 90vh;
 
     label {
       font-size: 16px;
     }
     .box > div span {
       font-size: 24px;
-    }
-    .footer h3 {
-      font-size: 20px;
     }
     &.show {
       transition: left 350ms ease-in;

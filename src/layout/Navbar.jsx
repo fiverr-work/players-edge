@@ -18,10 +18,13 @@ export default Navbar;
 
 const NavbarStyle = styled.nav`
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: clamp(15px, 3vh, 3vh);
   > div {
     display: inline-flex;
-    padding: 12px 20px;
+    padding-top: clamp(5px, 1vh, 1vh);
+    padding-bottom: clamp(5px, 1vh, 1vh);
+    padding-left: clamp(10px, 2vh, 2vh);
+    padding-right: clamp(10px, 2vh, 2vh);
     justify-content: space-around;
     align-items: center;
     background: #2b2b2b;
@@ -31,9 +34,10 @@ const NavbarStyle = styled.nav`
   a {
     text-transform: capitalize;
     font-weight: bold;
-    font-size: 24px;
+    font-size: clamp(14px, 2vh, 2vh);
     color: #f4f4f4;
-    padding: 10px 40px;
+    padding-left: 40px;
+    padding-right: 40px;
     display: flex;
     align-items: center;
     position: relative;
@@ -47,7 +51,7 @@ const NavbarStyle = styled.nav`
       position: absolute;
       right: -5px;
       width: 5px;
-      height: 42px;
+      height: 3.5vh;
       background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
         linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
       box-shadow: 0px 0px 18.9113px rgba(255, 248, 89, 0.18), 0px 0px 50px rgba(255, 245, 0, 0.5),

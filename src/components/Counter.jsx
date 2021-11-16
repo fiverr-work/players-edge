@@ -20,7 +20,7 @@ const CounterStyle = styled.div`
   h2 {
     margin-bottom: 10px;
     font-weight: 500;
-    font-size: 30px;
+    font-size: clamp(18px, 3vh, 3vh);
     text-transform: capitalize;
     color: #ffffff;
     span {
@@ -32,23 +32,16 @@ const CounterStyle = styled.div`
     background: #2b2b2b;
     box-shadow: -5px 13px 22px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
-    padding: 18px 50px;
-    padding-right: 0;
-    font-family: "Fira Code", monospace;
-    letter-spacing: 50px;
-    font-weight: normal;
-    font-size: 48px;
-    color: #f4f4f4;
-  }
 
-  @media (max-width: 768px) {
-    h2 {
-      font-size: 20px;
-    }
-    div {
-      font-size: 24px;
-      letter-spacing: 30px;
-      padding-left: 30px;
-    }
+    letter-spacing: clamp(30px, 3vh, 3vh);
+    font-size: clamp(16px, 4vh, 4vh);
+    padding-top: clamp(10px, 1vh, 1vh);
+    padding-bottom: clamp(10px, 1vh, 1vh);
+    padding-left: clamp(30px, 5vh, 5vh);
+    padding-right: 0;
+
+    font-family: "Fira Code", monospace;
+    font-weight: normal;
+    color: #f4f4f4;
   }
 `;

@@ -25,9 +25,9 @@ main
             padding-right: 15px
         &:nth-child(2)
             >*
-                margin-bottom: 30px
+                margin-bottom: clamp(15px, 2vh, 2vh)
             .connect
-                margin-top: 60px
+                margin-top: clamp(15px, 2vh, 2vh)
         &:nth-child(3)
             align-items: flex-start
             padding-left: 20px
@@ -35,11 +35,9 @@ main
         flex-direction: column
         .tickets
             display: block
-            margin-top: 30px
+            margin-top: clamp(12px, 2.5vh, 2.5vh)
         >div
             &:nth-child(3)
                 display: none
             >*
                 margin-bottom: 30px
-            .connect
-                margin-top: 30px !important

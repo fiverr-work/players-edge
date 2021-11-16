@@ -14,13 +14,13 @@ const Header = () => {
   const [menu, setMenu] = useState(false);
   return (
     <HeaderStyle>
-      <img data-aos="fade-down" data-aos-duration={500} className="lg" src={bg} alt="" />
-      <img data-aos="fade-down" data-aos-duration={500} className="sm" src={bgSm} alt="" />
-      <div data-aos="fade-down" data-aos-duration={500} className="title">
+      <img data-aos="fade-down" className="lg" src={bg} alt="" />
+      <img data-aos="fade-down" className="sm" src={bgSm} alt="" />
+      <div data-aos="fade-down" className="title">
         <span>Beta</span>
         <h1>Player’s Edge</h1>
       </div>
-      <div data-aos="fade-down" data-aos-duration={500} className="description">
+      <div data-aos="fade-down" className="description">
         <p>It is up to the participant to get the</p>
         <span>EDGE</span>
       </div>
@@ -37,10 +37,11 @@ const HeaderStyle = styled.header`
   width: 90%;
   max-width: 1320px;
   margin: 0 auto;
-  padding-top: 40px;
-  padding-bottom: 100px;
-  margin-bottom: 50px;
+  padding-top: clamp(10px, 2vh, 2vh);
+  padding-bottom: clamp(30px, 6vh, 6vh);
+  margin-bottom: 3vh;
   position: relative;
+  min-height: 100px;
 
   img {
     position: absolute;
@@ -58,10 +59,10 @@ const HeaderStyle = styled.header`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: clamp(10px, 1vh, 1vh);
     h1 {
       font-weight: 900;
-      font-size: 52px;
+      font-size: clamp(24px, 4vh, 4vh);
       line-height: 1;
       text-transform: capitalize;
       font-family: "Fira Sans Black", sans-serif;
@@ -71,12 +72,12 @@ const HeaderStyle = styled.header`
       vertical-align: middle;
       display: inline-block;
       font-weight: bold;
-      font-size: 24px;
+      font-size: clamp(16px, 2vh, 2vh);
       line-height: 94%;
       text-transform: capitalize;
       text-shadow: 0px 0px 20px #ff0000, 0px 0px 71.7083px #ff0000;
       color: #ffb9b9;
-      padding: 10px 30px;
+      padding: 1vh 2vh;
       margin-right: 20px;
 
       background: rgba(196, 196, 196, 0.01);
@@ -101,7 +102,7 @@ const HeaderStyle = styled.header`
     p {
       font-family: "Rubik Bold";
       font-weight: bold;
-      font-size: 36px;
+      font-size: clamp(16px, 2.8vh, 2.8vh);
       text-shadow: 0px 0px 15px rgba(255, 245, 0, 0.86), 0px 0px 72px rgba(255, 245, 7, 0.43);
       color: rgba(253, 249, 127, 0.8);
       margin-right: 10px;
@@ -111,13 +112,12 @@ const HeaderStyle = styled.header`
       text-shadow: 0px 0px 15px #ff0000, 0px 0px 71.7083px #ff0000;
       font-family: "Fira Sans Bold";
       font-weight: bold;
-      font-size: 36px;
+      font-size: clamp(14px, 2.8vh, 2.8vh);
       color: #ff9e9e;
     }
   }
 
   @media (max-width: 992px) {
-    padding-bottom: 40px;
     .description {
       flex-direction: column;
       p {
@@ -128,7 +128,6 @@ const HeaderStyle = styled.header`
     }
   }
   @media (max-width: 765px) {
-    padding-top: 30px;
     img {
       &.sm {
         display: block;
@@ -137,26 +136,12 @@ const HeaderStyle = styled.header`
         display: none;
       }
     }
-    .title {
-      margin-bottom: 10px;
-      h1 {
-        font-size: 30px;
-      }
-    }
-    .description {
-      p {
-        font-size: 16px;
-      }
-      span {
-        font-size: 18px;
-      }
-    }
   }
 `;
 
 // Menu Component
 const Menu = ({ setMenu }) => (
-  <MenuStyle onClick={() => setMenu(true)} data-aos="fade-left" data-aos-duration={500}>
+  <MenuStyle onClick={() => setMenu(true)}>
     <div>
       <span></span>
       <span></span>
@@ -167,10 +152,10 @@ const Menu = ({ setMenu }) => (
 
 const MenuStyle = styled.div`
   position: absolute;
-  top: 23px;
+  top: 1.5vh;
   right: 7%;
-  width: 78px;
-  height: 78px;
+  width: clamp(40px, 6vh, 6vh);
+  height: clamp(40px, 6vh, 6vh);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -186,15 +171,24 @@ const MenuStyle = styled.div`
   backdrop-filter: blur(76.9772px);
   cursor: pointer;
 
+  > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   span {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
       linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
     box-shadow: 0px 0px 18.9113px rgba(255, 248, 89, 0.18), 0px 0px 50px rgba(255, 245, 0, 0.5),
       inset 0px 0px 7.32115px rgba(255, 245, 0, 0.86);
     border-radius: 29.2846px;
-    width: 40px;
-    height: 7px;
-    display: block;
+    width: 60%;
+    height: 10%;
+    display: inline-block;
     :nth-child(2) {
       margin-top: 5px;
       margin-bottom: 5px;
