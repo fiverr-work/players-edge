@@ -14,13 +14,13 @@ const Header = () => {
   const [menu, setMenu] = useState(false);
   return (
     <HeaderStyle>
-      <img className="lg" src={bg} alt="" />
-      <img className="sm" src={bgSm} alt="" />
-      <div className="title">
+      <img data-aos="fade-down" data-aos-duration={500} className="lg" src={bg} alt="" />
+      <img data-aos="fade-down" data-aos-duration={500} className="sm" src={bgSm} alt="" />
+      <div data-aos="fade-down" data-aos-duration={500} className="title">
         <span>Beta</span>
         <h1>Player’s Edge</h1>
       </div>
-      <div className="description">
+      <div data-aos="fade-down" data-aos-duration={500} className="description">
         <p>It is up to the participant to get the</p>
         <span>EDGE</span>
       </div>
@@ -156,7 +156,7 @@ const HeaderStyle = styled.header`
 
 // Menu Component
 const Menu = ({ setMenu }) => (
-  <MenuStyle onClick={() => setMenu(true)}>
+  <MenuStyle onClick={() => setMenu(true)} data-aos="fade-left" data-aos-duration={500}>
     <div>
       <span></span>
       <span></span>

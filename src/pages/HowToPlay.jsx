@@ -8,8 +8,8 @@ import { ReactComponent as Questions } from "../img/how.svg";
 const HowToPlay = () => {
   return (
     <Template className="container">
-      <h1>How To Play</h1>
-      <div>
+      <h1 data-aos="zoom-in">How To Play</h1>
+      <div data-aos="fade-in">
         <div>
           <Questions />
         </div>

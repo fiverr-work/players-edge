@@ -35,11 +35,11 @@ const Home = () => {
               </span>
             </>
           ) : (
-            <Button className="connect" onClick={() => setModal(true)}>
+            <Button className="connect" onClick={() => setModal(true)} data-aos="zoom-in">
               Connect
             </Button>
           )}
-          <Button outline to="/history">
+          <Button outline to="/history" data-aos="zoom-in">
             Winner History
           </Button>
         </div>

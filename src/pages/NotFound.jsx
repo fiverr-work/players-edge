@@ -5,7 +5,7 @@ import { BackHome, Header } from "../layout/Template";
 const NotFound = () => {
   return (
     <>
-      <Header>404 Not Found</Header>
+      <Header data-aos="flip-up">404 Not Found</Header>
       <BackHome />
     </>
   );

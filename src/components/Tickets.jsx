@@ -13,7 +13,7 @@ const Tickets = ({ className }) => {
     setLoading(!loading);
   }
   return (
-    <TicketsStyle className={className}>
+    <TicketsStyle className={className} data-aos="zoom-in">
       <h3>
         <TicketIcon /> Tickets you own : <span>{number}</span>
       </h3>

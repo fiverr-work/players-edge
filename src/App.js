@@ -1,9 +1,12 @@
+import React, { useEffect } from "react";
 import "./sass/style.scss";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Web3ReactProvider } from "@web3-react/core";
 import Web3 from "web3";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 // Pages
 import Home from "./pages/Home";
@@ -22,6 +25,11 @@ function getLibrary(provider) {
 }
 
 const App = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+    });
+  }, []);
   return (
     <>
       <ToastContainer />

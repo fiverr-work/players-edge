@@ -9,11 +9,11 @@ import { ReactComponent as Winner } from "../img/winner.svg";
 const History = () => {
   return (
     <Template>
-      <h1>
+      <h1 data-aos="zoom-in">
         <Winner />
         Winner History
       </h1>
-      <div className="table">
+      <div className="table" data-aos="fade-in">
         <Table>test</Table>
       </div>
       <BackHome />

@@ -40,7 +40,11 @@ const FirstRound = () => {
           </h3>
         </div>
       </FirstRoundStyle>
-      <OpenSidebar onClick={() => setIsOpen(true)} className={isOpen ? "hide" : ""}>
+      <OpenSidebar
+        onClick={() => setIsOpen(true)}
+        className={isOpen ? "hide" : ""}
+        data-aos="fade-right"
+      >
         <div>
           <span>First</span>
           <span>Round</span>

@@ -4,7 +4,7 @@ import { BackHome, Header } from "../layout/Template";
 const SmartContract = () => {
   return (
     <>
-      <Header>Smart Contract Page</Header>
+      <Header data-aos="zoom-in">Smart Contract Page</Header>
       <BackHome />
     </>
   );

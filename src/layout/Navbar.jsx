@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Navbar = () => {
   return (
-    <NavbarStyle>
+    <NavbarStyle data-aos="fade-in">
       <div>
         <Link to="/how-to-play">How to play</Link>
         <Link to="/faq">FAQ</Link>

@@ -8,8 +8,8 @@ import { ReactComponent as People } from "../img/people.svg";
 const Referrals = () => {
   return (
     <Template className="container">
-      <h1>Referrals</h1>
-      <div>
+      <h1 data-aos="zoom-in">Referrals</h1>
+      <div data-aos="fade-in">
         <div>
           <People />
         </div>

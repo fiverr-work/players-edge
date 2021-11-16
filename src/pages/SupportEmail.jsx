@@ -4,7 +4,7 @@ import { BackHome, Header } from "../layout/Template";
 const SupportEmail = () => {
   return (
     <>
-      <Header>Support Email Page</Header>
+      <Header data-aos="zoom-in">Support Email Page</Header>
       <BackHome />
     </>
   );

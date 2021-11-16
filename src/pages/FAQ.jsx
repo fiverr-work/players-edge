@@ -39,8 +39,8 @@ const styles = {
 const FAQ = () => {
   return (
     <Template className="container">
-      <h1>FAQ</h1>
-      <div>
+      <h1 data-aos="zoom-in">FAQ</h1>
+      <div data-aos="fade-in">
         <div>
           <Faq />
         </div>

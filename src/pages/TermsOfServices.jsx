@@ -4,7 +4,7 @@ import { BackHome, Header } from "../layout/Template";
 const TermsOfServices = () => {
   return (
     <>
-      <Header>Terms of Services Page</Header>
+      <Header data-aos="zoom-in">Terms of Services Page</Header>
       <BackHome />
     </>
   );
